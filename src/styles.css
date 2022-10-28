@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: linear-gradient(to right, #2c3e50, #3498db); */
+  background: linear-gradient(to right, #948e99, #2e1437);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 60px;
+  margin-top: 2rem;
+  margin-right: 6rem;
+}
+img {
+  width: 200px;
+  height: 150px;
+  margin-top: 30rem;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-rows: minmax(7.4rem, auto) repeat(5, 6rem);
+  grid-template-columns: repeat(4, 6rem);
+  margin-left: 25rem;
+  font-family: monospace;
+}
+.grid > button {
+  font-family: monospace;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 2.2px;
+  outline: none;
+}
+
+.grid > button:hover,
+.grid > button:focus {
+  background-color: rgba(242, 241, 242, 0.9);
+}
+
+.two-places {
+  grid-column: span 2;
+}
+.output-plane {
+  grid-column: 1 / -1;
+  background: linear-gradient(to right, #757f9a, #d7dde8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0.3px solid whitesmoke;
+  border-radius: 15px 15px 0px 0px;
+}
+.previous {
+  font-size: 1.3rem;
+  color: #201c22;
+  font-family: monospace;
+}
